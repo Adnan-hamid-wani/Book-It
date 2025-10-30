@@ -9,8 +9,11 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST"],
+origin: [
+      "http://localhost:5173",         // local dev
+      "http://localhost:4173",         // local preview
+      "https://book-it-fe.vercel.app", // deployed frontend
+    ],    methods: ["GET", "POST"],
   })
 );
 
