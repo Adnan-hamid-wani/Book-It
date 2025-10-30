@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-import { Promo } from "./src/index"; // adjust path
+import { Promo } from "./index"; // adjust path
 
 dotenv.config();
 const ExperienceSchema = new mongoose.Schema({
