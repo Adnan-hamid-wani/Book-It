@@ -7,7 +7,6 @@
     "start": "node dist/index.js",
     "build": "tsc -p .",
     "seed": "ts-node src/seed.ts"
-
   },
   "dependencies": {
     "@prisma/client": "^5.4.0",
